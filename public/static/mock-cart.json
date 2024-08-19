@@ -1,0 +1,162 @@
+{
+    "status": "valid",
+    "description": "Cart found successfully",
+    "cart": [
+        {
+            "_id": "65d047dad15d4cbcb31cc7d9",
+            "owner": "746c580a-cb39-492a-b3d0-641da181c704",
+            "createdAt": "2024-02-17T05:44:58.781Z",
+            "id": "b9c23a58-9162-4307-81a5-097225efbb18",
+            "modifiedAt": "2024-03-15T10:19:02.659Z",
+            "items": [
+                {
+                    "id": "e11bb81b-a131-48b8-8152-d3be6df5d661",
+                    "configuration": {
+                        "options": [
+                            {
+                                "id": "base-color",
+                                "value": "#000000"
+                            },
+                            {
+                                "id": "packing-color",
+                                "value": "#FFBE98"
+                            },
+                            {
+                                "id": "sizes",
+                                "value": "M"
+                            }
+                        ],
+                        "variant": {
+                            "id": "oversized.sweatshirt.gray.v2",
+                            "selected": true
+                        }
+                    },
+                    "product": {
+                        "_id": "65f182af3d36ae8b7b11e907",
+                        "id": "e11bb81b-a131-48b8-8152-d3be6df5d661",
+                        "slug": "oversized-sweatshirt-3L1yGktVZVp8bzMpMST2EE",
+                        "name": "Oversized Sweatshirt ",
+                        "price": {
+                            "code": "USD",
+                            "value": "49.99"
+                        },
+                        "description": "<div><br>  <h1>Introducing the CozyComfort XL Sweatshirt: Your Ultimate Comfort Companion</h1><br>  <p>Are you ready to experience unparalleled comfort like never before? Look no further than our CozyComfort XL Sweatshirt - the epitome of coziness and style.</p><br>  <p>Picture this: It’s a crisp fall morning, and you’re craving the warmth and softness of your favorite blanket. Now imagine being able to wrap yourself in that same level of comfort wherever you go. That’s exactly what our CozyComfort XL Sweatshirt offers.</p><br>  <p>Designed with your comfort in mind, this sweatshirt boasts an oversized fit that’s perfect for lounging around the house or running errands on a chilly day. Its plush fabric feels like a gentle hug against your skin, while the spacious silhouette provides ample room for movement.</p><br>  <p>But the CozyComfort XL Sweatshirt isn’t just about comfort—it’s also about style. Its versatile design effortlessly blends fashion with functionality, making it a must-have staple in any wardrobe. Whether you’re pairing it with your favorite leggings for a cozy night in or layering it over a trendy ensemble for a casual day out, this sweatshirt adds a touch of chic to any look.</p><br>  <p>And let’s not forget about its practicality. With its easy-care fabric and durable construction, the CozyComfort XL Sweatshirt is designed to withstand the wear and tear of everyday life. Say goodbye to fussy garments that require special treatment—this sweatshirt is machine washable for your convenience.</p><br>  <p>So why settle for ordinary when you can have extraordinary comfort with our CozyComfort XL Sweatshirt? Treat yourself to the ultimate relaxation experience and embrace the cozy-chic vibe wherever you go.</p><br>  <p>Order yours today and discover why comfort never looked so good!</p><br></div>",
+                        "variants": {
+                            "default": "oversized.sweatshirt.gray.v2",
+                            "items": [
+                                {
+                                    "id": "oversized.sweatshirt.black.v1",
+                                    "priceModifier": "product.price.value",
+                                    "model": {
+                                        "src": "https://docs.cloud.kabeers.network/tests/work/models/oversized-sweatshirt/oversized-sweatshirt/oversized-sweatshirt.gltf",
+                                        "type": "gltf"
+                                    },
+                                    "images": [
+                                        {
+                                            "src": "https://docs.cloud.kabeers.network/static/models-work/oversized-sweatshirt.png",
+                                            "width": "400",
+                                            "height": "400"
+                                        },
+                                        {
+                                            "src": "https://docs.cloud.kabeers.network/static/models-work/oversized-sweat-1.png",
+                                            "width": "400",
+                                            "height": "389"
+                                        }
+                                    ],
+                                    "name": "Black"
+                                },
+                                {
+                                    "id": "oversized.sweatshirt.gray.v2",
+                                    "name": "Gray + Black",
+                                    "priceModifier": "product.price.value",
+                                    "model": {
+                                        "src": "https://docs.cloud.kabeers.network/tests/work/models/oversized-sweatshirt/oversized-sweatshirt/oversized-sweatshirt.gltf",
+                                        "type": "gltf"
+                                    },
+                                    "images": [
+                                        {
+                                            "src": "https://docs.cloud.kabeers.network/static/models-work/oversized-sweat-1.png",
+                                            "width": "400",
+                                            "height": "400"
+                                        },
+                                        {
+                                            "src": "https://docs.cloud.kabeers.network/static/models-work/oversized-sweatshirt.png",
+                                            "width": "400",
+                                            "height": "400"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "options": [
+                            {
+                                "name": "Sweatshirt Color",
+                                "type": "color-select",
+                                "option": {
+                                    "priceModifier": "product.price.value + (selection.index === 0 ? 5 : selection.index === 1 ? 8 : selection.index === 2 : 6) * 40",
+                                    "type": "string",
+                                    "defaultValue": "#000000",
+                                    "options": [
+                                        "#000000",
+                                        "#FAFAFA",
+                                        "#EEEEEE"
+                                    ]
+                                },
+                                "material": "*",
+                                "id": "base-color"
+                            },
+                            {
+                                "name": "Box Packing Color",
+                                "type": "color-select",
+                                "option": {
+                                    "priceModifier": "product.price.value + (selection.index === 0 ? 5 : selection.index === 1 ? 8 : selection.index === 2 : 6) * 40",
+                                    "type": "string",
+                                    "defaultValue": "#FFBE98",
+                                    "options": [
+                                        "#FFBE98",
+                                        "#FEECE2",
+                                        "#F7DED0",
+                                        "#E2BFB3"
+                                    ]
+                                },
+                                "material": "*",
+                                "id": "packing-color"
+                            },
+                            {
+                                "name": "Sizes",
+                                "type": "select",
+                                "option": {
+                                    "priceModifier": "product.price.value + (selection.index === 0 ? 5 : selection.index === 1 ? 8 : selection.index === 2 : 6) * 40",
+                                    "type": "string",
+                                    "defaultValue": "M",
+                                    "options": [
+                                        "XS",
+                                        "SM",
+                                        "M",
+                                        "LG",
+                                        "XL",
+                                        "XXL",
+                                        "XXXL"
+                                    ]
+                                },
+                                "id": "sizes"
+                            }
+                        ],
+                        "metadata": {
+                            "ids": {
+                                "shortID": "3L1yGktVZVp8bzMpMST2EE"
+                            },
+                            "reviews": {
+                                "type": "embedded.disqus"
+                            },
+                            "orders": {
+                                "count": 0,
+                                "lastUpdated": "2024-03-13T10:40:47.722Z"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

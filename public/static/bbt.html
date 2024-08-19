@@ -1,0 +1,20 @@
+<script>
+  // Event listener to receive messages from the parent frame
+  function __dn() {
+    window.addEventListener("message", function (e) {
+      switch (e.data.type) {
+        case "loc":
+            window.location.href = e.data.target;
+        case "height":
+          document.querySelector("#m").style.height = e.data.px + "px";
+      }
+    });
+  }
+</script>
+<iframe
+  id="#m"
+  src="https://docs.cloud.kabeers.network/scratch.php?i=1#"
+  frameborder="0"
+  style="width: 100vw; height: 200vh"
+  onload="__dn ()"
+/>
